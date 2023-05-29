@@ -28,17 +28,27 @@ body{
     margin-bottom: 20px;
 }
 
-
-
 #form-section{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 120%;
+}
+
+#form-section > div{
+    display: flex;
     flex-wrap: wrap;
-    gap: 50px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-#form-section > div > input,
+.formrow{
+    display: flex;
+    flex-direction: column;
+}
+
+input,
 select{
     margin-bottom: 20px;
     height: max(4.5vh, 23px);
@@ -47,14 +57,9 @@ select{
     -webkit-box-sizing: border-box;
 }
 
-#form-section > div > label{
+label{
     margin-bottom: 8px;
     font-family: 'Roboto', sans-serif;
-}
-
-#form-section > div{
-    display: flex;
-    flex-direction: column;
 }
 
 select{

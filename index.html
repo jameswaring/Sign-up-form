@@ -15,31 +15,33 @@
         <div id="form-title">Sign Up</div>
             <form id="form-section">
                 <div>
-                    <label for="title" class="formlabel">Title</label>
-                    <select name="title">
-                        <option value="mr">Mr</option>
-                        <option value="mr">Mrs</option>
-                        <option value="mr">Miss</option>
-                        <option value="mr">Master</option>
-                        <option value="mr">Ms</option>
-                        <option value="mr">Dr</option>
-                        <option value="mr">Prof</option>
-                    </select>
-                    <label for="fname" class="formlabel">First Name</label>
-                    <input type="text" id="fname" name="fname">
-                    <label for="surname" class="formlabel">Surname</label>
-                    <input type="text" id="surname" name="surname">
-                </div>  
-                <div>
-                    <label for="username" class="formlabel">Username</label>
-                    <input type="text" id="username" name="username">
-                    <label for="password" class="formlabel">Password</label>
-                    <input type="text" id="password" name="password">
-                    <label for="passwordConf" class="formlabel">Confirm Password</label>
-                    <input type="text" id="passwordConf" name="passwordConf">
+                    <div class="formrow">
+                        <label for="title" class="formlabel">Title</label>
+                        <select name="title">
+                            <option value="mr">Mr</option>
+                            <option value="mr">Mrs</option>
+                            <option value="mr">Miss</option>
+                            <option value="mr">Master</option>
+                            <option value="mr">Ms</option>
+                            <option value="mr">Dr</option>
+                            <option value="mr">Prof</option>
+                        </select>
+                        <label for="fname" class="formlabel">First Name</label>
+                        <input type="text" id="fname" name="fname">
+                        <label for="surname" class="formlabel">Surname</label>
+                        <input type="text" id="surname" name="surname">
+                    </div>  
+                    <div class="formrow">
+                        <label for="username" class="formlabel">Username</label>
+                        <input type="text" id="username" name="username" minlength="5" title="please use at least 5 characters">
+                        <label for="password" class="formlabel">Password</label>
+                        <input type="text" id="password" name="password">
+                        <label for="passwordConf" class="formlabel">Confirm Password</label>
+                        <input type="text" id="passwordConf" name="passwordConf">
+                    </div>
                 </div>
+                <button type="submit" id="submitbtn">Create Account</button>
             </form>
-            <button type="submit" id="submitbtn">Create Account</button>
     </div>
 </body>
 </html>
