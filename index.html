@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
@@ -10,32 +13,33 @@
 <body>
     <div id="form-border">
         <div id="form-title">Sign Up</div>
-        <form id="form-section">
-            <div>
-                <label for="title" class="formlabel">Title</label>
-                <select name="title">
-                    <option value="mr">Mr</option>
-                    <option value="mr">Mrs</option>
-                    <option value="mr">Miss</option>
-                    <option value="mr">Master</option>
-                    <option value="mr">Ms</option>
-                    <option value="mr">Dr</option>
-                    <option value="mr">Prof</option>
-                </select>
-                <label for="fname" class="formlabel">FirstName</label>
-                <input type="text" id="fname" name="fname">
-                <label for="surname" class="formlabel">Surname</label>
-                <input type="text" id="surname" name="surname">
-            </div>  
-            <div>
-                <label for="username" class="formlabel">Username</label>
-                <input type="text" id="username" name="username">
-                <label for="password" class="formlabel">Password</label>
-                <input type="text" id="password" name="password">
-                <label for="passwordConf" class="formlabel">Confirm Password</label>
-                <input type="text" id="passwordConf" name="passwordConf">
-            </div>   
-        </form>
+            <form id="form-section">
+                <div>
+                    <label for="title" class="formlabel">Title</label>
+                    <select name="title">
+                        <option value="mr">Mr</option>
+                        <option value="mr">Mrs</option>
+                        <option value="mr">Miss</option>
+                        <option value="mr">Master</option>
+                        <option value="mr">Ms</option>
+                        <option value="mr">Dr</option>
+                        <option value="mr">Prof</option>
+                    </select>
+                    <label for="fname" class="formlabel">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="surname" class="formlabel">Surname</label>
+                    <input type="text" id="surname" name="surname">
+                </div>  
+                <div>
+                    <label for="username" class="formlabel">Username</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password" class="formlabel">Password</label>
+                    <input type="text" id="password" name="password">
+                    <label for="passwordConf" class="formlabel">Confirm Password</label>
+                    <input type="text" id="passwordConf" name="passwordConf">
+                </div>
+            </form>
+            <button type="submit" id="submitbtn">Create Account</button>
     </div>
 </body>
 </html>
