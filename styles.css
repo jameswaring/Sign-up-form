@@ -46,6 +46,13 @@ body{
 .formrow{
     display: flex;
     flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+input :invalid{
+    border-style: dashed;
+    border-color: red;
 }
 
 input,
@@ -76,4 +83,9 @@ select{
     border-color: black;
     border-radius: 3px;
     box-shadow: 3px 3px rgb(56, 56, 56)
+}
+
+#passmessage{
+    color: red;
+    font-size: 0.8rem;
 }
