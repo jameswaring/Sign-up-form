@@ -50,9 +50,14 @@ body{
     margin-right: 50px;
 }
 
-input :invalid{
-    border-style: dashed;
-    border-color: red;
+.invalid-entered{
+    border-width: 1px;
+    border-bottom: red;
+}
+
+input:valid{
+    border-style: solid;
+    border-color: green;
 }
 
 input,
@@ -86,6 +91,12 @@ select{
 }
 
 #passmessage{
+    display:flex;
+    justify-content: center;
+    height: 30px;
+    width: 200px;
     color: red;
     font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
