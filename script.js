@@ -2,11 +2,11 @@ const form = document.querySelector("#form-section")
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     // check whether the passwords are the same
-    if(!passConfirmCheck){
+    if(!passConfirmCheck()){
         document.getElementById("passmessage").innerHTML = "Password's don't match"
     }
     // check whether the password is strong enough
-    else if(!checkPassStrength){
+    else if(!checkPassStrength()){
         document.getElementById("passmessage").innerHTML = "Use letters, numbers, upper and lower case"
     }
     // success message
@@ -19,6 +19,7 @@ form.addEventListener("submit", (e) => {
 function passConfirmCheck(){
     const password = document.querySelector("#password").value
     const passwordconf = document.querySelector("#passwordConf").value
+    console.log(password===passwordconf)
     return (password===passwordconf ? true : false)
 }
 
