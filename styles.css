@@ -2,11 +2,12 @@ body{
     height: 100vh;
     min-height: min-content;
     display: flex;
+    min-width: 355px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(245, 245, 245));
     background-image: url('images/signupback.avif');
+    background-size: cover;
 }
 
 #form-border{
@@ -97,12 +98,14 @@ select{
 }
 
 #passmessage{
-    display:flex;
-    justify-content: center;
-    height: 30px;
-    width: 300px;
     color: red;
     font-size: 0.8rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
+#passholder{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
