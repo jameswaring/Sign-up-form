@@ -37,9 +37,13 @@ document.getElementById("email").addEventListener("click", function(e){
     }
 });
 
-document.getElementById("password").addEventListener("click", function(e){
-    if(document.querySelector("#password").value == ""){
+document.getElementById("password").addEventListener("input", function(e){
+    if((document.querySelector("#password").value == "") || (!checkPassStrength())){
+        document.getElementById("passmessage").innerHTML = "Use letters, numbers, upper and lower case"
         document.getElementById("password").className="invalid-entered";
+    }
+    else if(checkPassStrength()){
+        document.getElementById("passmessage").innerHTML = ""
     }
 });
 
