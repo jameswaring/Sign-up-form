@@ -20,35 +20,30 @@ form.addEventListener("submit", (e) => {
 })
 
 document.getElementById("fname").addEventListener("click", function(e){
-    console.log(e)
-    if(document.querySelector("#fname").value == ""){
-        document.getElementById("fname").className="invalid-entered";
+   if(document.querySelector("#fname").value == ""){
+       document.getElementById("fname").classList.add("invalid-entered");
     }
 });
 
 document.getElementById("surname").addEventListener("click", function(e){
-    console.log(e)
     if(document.querySelector("#surname").value == ""){
         document.getElementById("surname").className="invalid-entered";
     }
 });
 
 document.getElementById("email").addEventListener("click", function(e){
-    console.log(e)
     if(document.querySelector("#email").value == ""){
         document.getElementById("email").className="invalid-entered";
     }
 });
 
 document.getElementById("password").addEventListener("click", function(e){
-    console.log(e)
     if(document.querySelector("#password").value == ""){
         document.getElementById("password").className="invalid-entered";
     }
 });
 
 document.getElementById("passwordConf").addEventListener("click", function(e){
-    console.log(e)
     if(document.querySelector("#passwordConf").value == ""){
         document.getElementById("passwordConf").className="invalid-entered";
     }

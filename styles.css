@@ -5,16 +5,20 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(245, 245, 245))
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(245, 245, 245));
+    background-image: url('images/signupback.avif');
 }
 
 #form-border{
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    width: min(50vw, 500px);
+    justify-content: space-between;
     align-items: center;
     border-style: solid;
+    border-color: rgb(130, 130, 130);
+    box-shadow: 10px 5px 5px rgb(189, 189, 189);
     border-width: 2px;
     border-radius: 16px;
     padding: 30px;
@@ -33,26 +37,29 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 120%;
+    width: 100%;
 }
 
 #form-section > div{
     display: flex;
+    width: 80%;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 50px;
-    margin-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .formrow{
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 auto;
 }
 
 .invalid-entered{
-    border-width: 1px;
-    border-bottom: red;
+    outline:none;
+    border: 1px solid red;
 }
 
 input:valid{
@@ -87,14 +94,13 @@ select{
     border-style: solid;
     border-color: black;
     border-radius: 3px;
-    box-shadow: 3px 3px rgb(56, 56, 56)
 }
 
 #passmessage{
     display:flex;
     justify-content: center;
     height: 30px;
-    width: 200px;
+    width: 300px;
     color: red;
     font-size: 0.8rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
